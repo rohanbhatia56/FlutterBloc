@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/flight.dart';
 
+// this is a network provider
 class NetworkProvider {
   Future<List<Flight>> getFlights() async {
     final response = await http.get(Uri.parse("http://192.168.1.2:3000/flights"));
