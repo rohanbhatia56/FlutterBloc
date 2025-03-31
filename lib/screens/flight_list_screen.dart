@@ -8,7 +8,7 @@ class FlightListScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Flight Booking")),
+      appBar: AppBar(title: Text("flight Booking")),
       body: BlocBuilder<FlightBloc, FlightState>(
         builder: (context, state) {
           if (state is FlightLoading) {
